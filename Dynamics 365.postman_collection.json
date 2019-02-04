@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "9073cf75-f8f4-4c99-baca-767835035cf4",
+		"name": "Dynamics 365",
+		"description": "REST API Collection for a Dynamics 365 Online instance.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get new Access Token",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCIsImtpZCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCJ9.eyJhdWQiOiJodHRwczovL2NybTQyMjYzMy5hcGkuY3JtLmR5bmFtaWNzLmNvbSIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2Q2ZGNjNmY4LTdjMTQtNGYzMS1hNTcxLWE3YjRlZTgzNmQyZC8iLCJpYXQiOjE1NDkyNzIzMjcsIm5iZiI6MTU0OTI3MjMyNywiZXhwIjoxNTQ5Mjc2MjI3LCJhY3IiOiIxIiwiYWlvIjoiQVNRQTIvOEtBQUFBWFQ2ZjNZT3R1dGlDdlJxNis1cXpXbHFwVGxVUWdxaEEzdjd2N3NwaDY2cz0iLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiN2Q1YTM0Y2UtZDY4ZS00Yjk1LTgwODUtZDhkMDM0ZjNlMDY2IiwiYXBwaWRhY3IiOiIwIiwiZmFtaWx5X25hbWUiOiJBZG1pbmlzdHJhdG9yIiwiZ2l2ZW5fbmFtZSI6Ik1PRCIsImlwYWRkciI6Ijg3LjE2Ny4xMjAuNTUiLCJuYW1lIjoiTU9EIEFkbWluaXN0cmF0b3IiLCJvaWQiOiJhNGM0ZmE0MS0wZmYyLTQ5YjctOTVjMi04NWRkNTUzYjgyYmYiLCJwdWlkIjoiMTAwMzIwMDAzMjE5QUEyOCIsInNjcCI6InVzZXJfaW1wZXJzb25hdGlvbiIsInN1YiI6IklNVU1DTzl3NzR4QVJrQ2FldHV0Z1locF9teHA5dmZDT0VSbUVEVk9IYVUiLCJ0aWQiOiJkNmRjYzZmOC03YzE0LTRmMzEtYTU3MS1hN2I0ZWU4MzZkMmQiLCJ1bmlxdWVfbmFtZSI6ImFkbWluQENSTTQyMjYzMy5vbm1pY3Jvc29mdC5jb20iLCJ1cG4iOiJhZG1pbkBDUk00MjI2MzMub25taWNyb3NvZnQuY29tIiwidXRpIjoiOXQ1YzZ1V0RqRW1UXzVjTGtlcEZBQSIsInZlciI6IjEuMCJ9.MF6gj6nZflxCzJHE-zput-KcZr6bieMxDqF6bwE6p1VdmTjZ-KLfS8q8ogPHTRjbsvfLyB35xt_l_G3FixNMHmGheWN_bk4HoVT_BbyuKAKvOUlaUybq0A56wv83XWpqW01y12QmCLZnAW0Ms9E01m4D65wBSWKsknQTjndaQxrHcpDt6-eiJuxADiaU4DQyVImsuRpZiZP5qB6tISR1dhVK-nHUaFRiEz-87rPhVCKdoHlKhFdSqujY89oREFf8dwdqz_fDci6-1nRH_tQqaa-z6MUd5_V0xpZBPCZKHNQVYfrLhSfJJby98nupzbIASPjhjZRFceQZnV7-BNyjHQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "Get the JWT token."
+			},
+			"response": []
+		},
+		{
+			"name": "WhoAmI",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSIsImtpZCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSJ9.eyJhdWQiOiJodHRwczovL2NybTQyMjYzMy5hcGkuY3JtLmR5bmFtaWNzLmNvbSIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2Q2ZGNjNmY4LTdjMTQtNGYzMS1hNTcxLWE3YjRlZTgzNmQyZC8iLCJpYXQiOjE1NDg4NTM1NzcsIm5iZiI6MTU0ODg1MzU3NywiZXhwIjoxNTQ4ODU3NDc3LCJhY3IiOiIxIiwiYWlvIjoiNDJKZ1lPQTZJNzZ6ZVpsMlg4N2VWTUZyS2NFbnJMOSswMkpYVGVtNVZYdUVYYlU4SVFzQSIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiI3ZDVhMzRjZS1kNjhlLTRiOTUtODA4NS1kOGQwMzRmM2UwNjYiLCJhcHBpZGFjciI6IjAiLCJmYW1pbHlfbmFtZSI6IkFkbWluaXN0cmF0b3IiLCJnaXZlbl9uYW1lIjoiTU9EIiwiaXBhZGRyIjoiMjE3LjI1MC40Mi4zNyIsIm5hbWUiOiJNT0QgQWRtaW5pc3RyYXRvciIsIm9pZCI6ImE0YzRmYTQxLTBmZjItNDliNy05NWMyLTg1ZGQ1NTNiODJiZiIsInB1aWQiOiIxMDAzMjAwMDMyMTlBQTI4Iiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoiSU1VTUNPOXc3NHhBUmtDYWV0dXRnWWhwX214cDl2ZkNPRVJtRURWT0hhVSIsInRpZCI6ImQ2ZGNjNmY4LTdjMTQtNGYzMS1hNTcxLWE3YjRlZTgzNmQyZCIsInVuaXF1ZV9uYW1lIjoiYWRtaW5AQ1JNNDIyNjMzLm9ubWljcm9zb2Z0LmNvbSIsInVwbiI6ImFkbWluQENSTTQyMjYzMy5vbm1pY3Jvc29mdC5jb20iLCJ1dGkiOiJXVzd2dlhFQ2EwaU5lNXVzVm1RVEFBIiwidmVyIjoiMS4wIn0.UCt8-vXpNxRmERArdN_HwmNHwv1egvgIFMKNtJUylgVPjhZnlFMROdgdhe_oHKJpwZ-hpYwQIiSDjhHvqNzCfNqM1j3oWJ993zWAl3n7eh4XdciGWtPeYd_Qk2oO_-rksPgTqvGonPf2qAbK3uwwgW7fnw4ayWBK5GkQupXs-2Lb-B2avAWlZLLNgI6Rz4Pl8qFtEewQdi5t6JgyZYs5x4dTHNxRUJb3L5wF5cSIoYDpz7rDts8SdrHkLNk9itq1jr9IqGEF7L9K9e-yrpZTb7_R6Ra0kI_ZvWAFdv979O8AgOjQPTeZvX9f-wqay7xuVwjvs0sJG-X7gJhx_pdcNA",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{webapiurl}}WhoAmI",
+					"host": [
+						"{{webapiurl}}WhoAmI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Contact in Dynamics 365",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSIsImtpZCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSJ9.eyJhdWQiOiJodHRwczovL2NybTQyMjYzMy5hcGkuY3JtLmR5bmFtaWNzLmNvbSIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2Q2ZGNjNmY4LTdjMTQtNGYzMS1hNTcxLWE3YjRlZTgzNmQyZC8iLCJpYXQiOjE1NDg4NTM1NzcsIm5iZiI6MTU0ODg1MzU3NywiZXhwIjoxNTQ4ODU3NDc3LCJhY3IiOiIxIiwiYWlvIjoiNDJKZ1lPQTZJNzZ6ZVpsMlg4N2VWTUZyS2NFbnJMOSswMkpYVGVtNVZYdUVYYlU4SVFzQSIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiI3ZDVhMzRjZS1kNjhlLTRiOTUtODA4NS1kOGQwMzRmM2UwNjYiLCJhcHBpZGFjciI6IjAiLCJmYW1pbHlfbmFtZSI6IkFkbWluaXN0cmF0b3IiLCJnaXZlbl9uYW1lIjoiTU9EIiwiaXBhZGRyIjoiMjE3LjI1MC40Mi4zNyIsIm5hbWUiOiJNT0QgQWRtaW5pc3RyYXRvciIsIm9pZCI6ImE0YzRmYTQxLTBmZjItNDliNy05NWMyLTg1ZGQ1NTNiODJiZiIsInB1aWQiOiIxMDAzMjAwMDMyMTlBQTI4Iiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoiSU1VTUNPOXc3NHhBUmtDYWV0dXRnWWhwX214cDl2ZkNPRVJtRURWT0hhVSIsInRpZCI6ImQ2ZGNjNmY4LTdjMTQtNGYzMS1hNTcxLWE3YjRlZTgzNmQyZCIsInVuaXF1ZV9uYW1lIjoiYWRtaW5AQ1JNNDIyNjMzLm9ubWljcm9zb2Z0LmNvbSIsInVwbiI6ImFkbWluQENSTTQyMjYzMy5vbm1pY3Jvc29mdC5jb20iLCJ1dGkiOiJXVzd2dlhFQ2EwaU5lNXVzVm1RVEFBIiwidmVyIjoiMS4wIn0.UCt8-vXpNxRmERArdN_HwmNHwv1egvgIFMKNtJUylgVPjhZnlFMROdgdhe_oHKJpwZ-hpYwQIiSDjhHvqNzCfNqM1j3oWJ993zWAl3n7eh4XdciGWtPeYd_Qk2oO_-rksPgTqvGonPf2qAbK3uwwgW7fnw4ayWBK5GkQupXs-2Lb-B2avAWlZLLNgI6Rz4Pl8qFtEewQdi5t6JgyZYs5x4dTHNxRUJb3L5wF5cSIoYDpz7rDts8SdrHkLNk9itq1jr9IqGEF7L9K9e-yrpZTb7_R6Ra0kI_ZvWAFdv979O8AgOjQPTeZvX9f-wqay7xuVwjvs0sJG-X7gJhx_pdcNA",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "If-None-Match",
+						"value": "none",
+						"type": "text"
+					},
+					{
+						"key": "OData-Version",
+						"value": "4.0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "OData-Max-Version",
+						"value": "4.0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Tristan\"\n}"
+				},
+				"url": {
+					"raw": "{{webapiurl}}accounts",
+					"host": [
+						"{{webapiurl}}accounts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

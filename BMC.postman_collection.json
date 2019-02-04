@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "77283383-7e3a-43f0-864c-f461e6e07ff7",
+		"name": "BMC",
+		"description": "This is a BMC REST API collection-",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4TDJSdjNZSzAxbzVcL1hkVXdqd1RvZHRvRUxBdVUyZ0ZHbHp2QjIwbU9sdU5sZlBlZVE1bVRxeTV3NXVndFNvQmhkV0RmYXJuc1lvVTBIV2lUTzNpM2tQdEVRQ0xQODcyTHZnTTBLQlVleEk4OHNuTlJ5RmlaQT09IiwibmJmIjoxNTQ4NzUzNzQyLCJpc3MiOiJIUENsaWVudCIsImV4cCI6MTU0ODc1NzQ2MiwiX2NhY2hlSWQiOjg1LCJpYXQiOjE1NDg3NTM4NjIsImp0aSI6IklER0hQQ2xpZW50MDAwUE1ER0VNUExGWkRQTzQ5TyJ9.N7q2rq1SrWsn-NFiTO2z1r5D2yBlZSXFXb6918uwhmo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8008/api/arsys/v1/entry/User",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"arsys",
+						"v1",
+						"entry",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get JWT Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "authString",
+						"value": "Hanibal2!",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/api/jwt/login?username=Tristan&password=Hanibal2!",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"jwt",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Tristan"
+						},
+						{
+							"key": "password",
+							"value": "Hanibal2!"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
